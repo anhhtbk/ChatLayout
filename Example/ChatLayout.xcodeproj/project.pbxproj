@@ -597,13 +597,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = PG4V34R8QT;
+						DevelopmentTeam = K3H9JPWPRP;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = PG4V34R8QT;
+						DevelopmentTeam = K3H9JPWPRP;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -679,14 +679,12 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ChatLayout_Example/Pods-ChatLayout_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChatLayout/ChatLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FPSCounter/FPSCounter.framework",
 				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChatLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPSCounter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -941,12 +939,12 @@
 				CODE_SIGN_ENTITLEMENTS = ChatLayout_Example.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PG4V34R8QT;
+				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				INFOPLIST_FILE = ChatLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = ie.ekazaev.pureMessageKit.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhht.dev.chatlayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -964,12 +962,12 @@
 				CODE_SIGN_ENTITLEMENTS = ChatLayout_Example.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PG4V34R8QT;
+				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				INFOPLIST_FILE = ChatLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = ie.ekazaev.pureMessageKit.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhht.dev.chatlayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -983,7 +981,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E094931D1426F33B8D1D082 /* Pods-ChatLayout_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = PG4V34R8QT;
+				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1006,7 +1004,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7878AA33F3C696DE4A57C8C1 /* Pods-ChatLayout_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = PG4V34R8QT;
+				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

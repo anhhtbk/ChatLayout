@@ -10,7 +10,6 @@
 import ChatLayout
 import DifferenceKit
 import Foundation
-import FPSCounter
 import InputBarAccessoryView
 import UIKit
 
@@ -54,8 +53,7 @@ final class ChatViewController: UIViewController {
     private let inputBarView = InputBarAccessoryView()
     private let chatController: ChatController
     private let dataSource: ChatCollectionDataSource
-    private let fpsCounter = FPSCounter()
-    private let fpsView = EdgeAligningView<UILabel>(frame: CGRect(origin: .zero, size: .init(width: 30, height: 30)))
+   
     private var animator: ManualAnimator?
 
     private var translationX: CGFloat = 0
@@ -90,8 +88,7 @@ final class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fpsCounter.delegate = self
-        fpsCounter.startTracking()
+        
         if #available(iOS 13.0, *) {
             view.backgroundColor = .systemBackground
         } else {
@@ -99,20 +96,6 @@ final class ChatViewController: UIViewController {
         }
 
         inputBarView.delegate = self
-
-        fpsView.translatesAutoresizingMaskIntoConstraints = false
-        fpsView.flexibleEdges = [.trailing]
-        fpsView.layoutMargins = UIEdgeInsets(top: 8, left: 16, bottom: 0, right: 16)
-        fpsView.customView.font = .preferredFont(forTextStyle: .caption2)
-        fpsView.customView.text = "FPS: unknown"
-        if #available(iOS 13.0, *) {
-            fpsView.backgroundColor = .systemBackground
-            fpsView.customView.textColor = .systemGray3
-        } else {
-            fpsView.backgroundColor = .white
-            fpsView.customView.textColor = .lightGray
-        }
-        inputBarView.topStackView.addArrangedSubview(fpsView)
         inputBarView.shouldAnimateTextDidChangeLayout = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Show Keyboard", style: .plain, target: self, action: #selector(ChatViewController.showHideKeyboard))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(ChatViewController.setEditNotEdit))
@@ -629,14 +612,6 @@ extension ChatViewController: KeyboardListenerDelegate {
             return
         }
         currentInterfaceActions.options.remove(.changingKeyboardFrame)
-    }
-
-}
-
-extension ChatViewController: FPSCounterDelegate {
-
-    public func fpsCounter(_ counter: FPSCounter, didUpdateFramesPerSecond fps: Int) {
-        fpsView.customView.text = "FPS: \(fps)"
     }
 
 }
