@@ -97,8 +97,8 @@ final class ChatViewController: UIViewController {
 
         inputBarView.delegate = self
         inputBarView.shouldAnimateTextDidChangeLayout = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Show Keyboard", style: .plain, target: self, action: #selector(ChatViewController.showHideKeyboard))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(ChatViewController.setEditNotEdit))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Show Keyboard", style: .plain, target: self, action: #selector(ChatViewController.showHideKeyboard))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(ChatViewController.setEditNotEdit))
 
         chatLayout.settings.interItemSpacing = 8
         chatLayout.settings.interSectionSpacing = 8

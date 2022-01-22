@@ -136,10 +136,10 @@ final class DefaultChatController: ChatController {
                     cells.insert(dateCell, at: 0)
                 }
 
-                if self.typingState == .typing,
-                   index == messagesSplitByDay.count - 1 {
-                    cells.append(.typingIndicator)
-                }
+//                if self.typingState == .typing,
+//                   index == messagesSplitByDay.count - 1 {
+//                    cells.append(.typingIndicator)
+//                }
 
                 return cells // Section(id: sectionTitle.hashValue, title: sectionTitle, cells: cells)
             }.joined()
